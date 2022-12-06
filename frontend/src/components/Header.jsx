@@ -8,13 +8,13 @@ export const Header = () => {
       <nav className="header-nav">
         <ul className="header-list">
           <li className="header-item">
-            <a href="">About</a>
+            <a href="">test1</a>
           </li>
           <li className="header-item">
-            <a href="">ブログ</a>
+            <a href="">test2</a>
           </li>
           <li className="header-item header-item--contact">
-            <a href="">お問い合わせ</a>
+            <a href="">test3</a>
           </li>
         </ul>
       </nav>

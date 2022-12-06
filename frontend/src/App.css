@@ -1,16 +1,15 @@
-/* 追加 */
-
-.chart-canvas {
+.wrapper {
   display: grid;
-  place-items: center;
-  margin: 100px;
-  border-style: solid;
-  border-color: #d6d6d6;
-  border-width: thin;
-  padding: 20px;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 100px 1fr 50px;
+  grid-template-areas:
+    "header header"
+    "sidebar-menu chart-canvas"
+    "footer footer";
 }
 
 .header {
+  grid-area: header;
   padding: 16px 24px;
   background-color: #eaeaea;
   display: flex;
@@ -35,4 +34,28 @@
   background-color: #2486d1;
   padding: 6px 16px;
   border-radius: 6px;
+}
+
+.sidebar-menu {
+  grid-area: sidebar-menu;
+  background-color: #333;
+  color: #fff;
+}
+
+.chart-canvas {
+  grid-area: chart-canvas;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  border-style: solid;
+  border-color: #d6d6d6;
+  border-width: thin;
+  padding: 20px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #eaeaea;
+  text-align: center;
 }
