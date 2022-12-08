@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint './src/**/*.{js,jsx}'",
-    "deploy": "npm run build && gh-pages -d ."
+    "deploy": "./deploy.sh"
   },
   "dependencies": {
     "react": "^17.0.2",
